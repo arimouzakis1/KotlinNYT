@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/newsHeadline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:text="This is an example headline" />
+
+    <TextView
+        android:id="@+id/newsBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere bibendum dolor hendrerit imperdiet. Cras laoreet lectus eget suscipit porttitor. Duis iaculis massa sed ultricies condimentum. Vestibulum nulla arcu, vestibulum quis aliquam eget, pharetra venenatis ex. Aenean pharetra non purus sed blandit. Donec pharetra sem ac libero luctus, eu aliquet lectus efficitur. Sed rutrum sem eu ultricies sagittis. Vivamus bibendum nisl lacus, eu dapibus magna rutrum eget. Duis nisl metus, porttitor et blandit non, viverra ac mi. Vestibulum suscipit nunc vitae nisl luctus blandit. Praesent laoreet arcu vitae magna accumsan, eu ornare quam dapibus. Morbi dignissim tortor felis, nec volutpat nulla rhoncus vitae. Donec finibus ultricies tellus a consectetur. Quisque tincidunt tortor in porttitor consequat. Fusce aliquam, nisi non tristique sagittis, massa mauris varius tellus, ac consectetur metus magna eget arcu. Nam volutpat viverra ipsum, sed blandit est tincidunt non.
+
+In gravida lobortis metus in aliquam. Mauris vel sodales urna. Sed id mi aliquam, laoreet dui vitae, aliquam libero. Donec lobortis mi quis quam porttitor sollicitudin ac at nibh. Phasellus laoreet auctor laoreet. Pellentesque luctus in tortor id pretium. Nulla sodales ipsum odio, nec efficitur orci feugiat nec. Morbi auctor eget ante vitae egestas. Phasellus nec ullamcorper nunc."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newsHeadline" />
+
+    <TextView
+        android:id="@+id/newsLastUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="7h ago"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newsBody" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:baselineAlignBottom="true"
+        app:layout_constraintBaseline_toBaselineOf="@+id/newsLastUpdated"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_share_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:baselineAlignBottom="true"
+        app:layout_constraintBaseline_toBaselineOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:srcCompat="@drawable/ic_bookmark_border_black_24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
